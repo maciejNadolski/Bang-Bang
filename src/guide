@@ -1,0 +1,19 @@
+Okno startowe:
+-Create a room #działa jako serwer
+-Join a room #działa jako klient
+-Exit
+-Check all characters
+
+Okno gry:
+-mainPanel z graczami i kościami
+-statsPanel ze statami gracza oraz statami wybranego gracza
+
+Message dialog kto wygryał oraz czy gramy dalej,
+
+klasa player to głównie statystyki
+
+klasa character to postacie wykorzystywane w grze
+
+klasa dice - kości
+
+reszta wyjdzie w praniu
