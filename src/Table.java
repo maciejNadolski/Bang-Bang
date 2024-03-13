@@ -11,6 +11,7 @@ public class Table extends JFrame {
     private GridBagConstraints c;
     private GridBagConstraints cStat;
     private GridBagConstraints cMain;
+    private int playerAmount;
     Table(int playerCountVal){
         frameWidth = 600;
         frameHeight = 600;
@@ -37,17 +38,32 @@ public class Table extends JFrame {
         mainPanel.setBackground(Color.GRAY);
         mainPanel.setLayout(null);
         c.gridy = 0;
-        elemsInMainPanel(mainPanel);
+        elemsInMainPanel(mainPanel,4);
         add(mainPanel,c);
 
     }
 
-    private void elemsInMainPanel(JPanel mainPanel){
+    private void elemsInMainPanel(JPanel mainPanel,int playerAmount){
         Dice dice1 = new Dice(175,200);
         Dice dice2 = new Dice(250,150);
         Dice dice3 = new Dice(325,200);
         Dice dice4 = new Dice(300,275);
         Dice dice5 = new Dice(200,275);
+
+        switch (playerAmount) {
+            case 4:
+                Cowboy cowboy1 = new Cowboy(100,0);
+                Cowboy cowboy2 = new Cowboy(300,0);
+                Cowboy cowboy3 = new Cowboy(500,0);
+                Cowboy cowboy4 = new Cowboy(500,300);
+                mainPanel.add(cowboy1);
+                mainPanel.add(cowboy2);
+                mainPanel.add(cowboy3);
+                mainPanel.add(cowboy4);
+                break;
+
+
+        }
 
         mainPanel.add(dice1);
         mainPanel.add(dice2);
