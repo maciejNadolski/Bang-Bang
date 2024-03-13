@@ -13,10 +13,9 @@ public class Cowboy extends JComponent {
     }
 
     private void setLook(int xposition, int yposition){
-        setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        setBorder(BorderFactory.createLineBorder(Color.BLUE));
         setVisible(true);
         setBounds(xposition,yposition,75,75);
-        setBackground(Color.BLUE);
         setOpaque(true);
     }
 

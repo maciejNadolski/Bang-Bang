@@ -25,11 +25,11 @@ public class Table extends JFrame {
         GridBagConstraints c = new GridBagConstraints();
 
 
-        configMainPanel(c);
+        configMainPanel(c,playerCountVal);
         configStatsPanel(c);
     };
 
-    private void configMainPanel(GridBagConstraints c){
+    private void configMainPanel(GridBagConstraints c,int playerAmount){
         JPanel mainPanel = new JPanel();
         mainPanel.setPreferredSize(new Dimension(frameWidth,frameHeight*5/7));
         mainPanel.setMinimumSize(new Dimension(frameWidth,frameHeight*5/7));
@@ -38,7 +38,7 @@ public class Table extends JFrame {
         mainPanel.setBackground(Color.GRAY);
         mainPanel.setLayout(null);
         c.gridy = 0;
-        elemsInMainPanel(mainPanel,4);
+        elemsInMainPanel(mainPanel,playerAmount);
         add(mainPanel,c);
 
     }
@@ -52,15 +52,78 @@ public class Table extends JFrame {
 
         switch (playerAmount) {
             case 4:
-                Cowboy cowboy1 = new Cowboy(100,0);
-                Cowboy cowboy2 = new Cowboy(300,0);
-                Cowboy cowboy3 = new Cowboy(500,0);
-                Cowboy cowboy4 = new Cowboy(500,300);
-                mainPanel.add(cowboy1);
-                mainPanel.add(cowboy2);
-                mainPanel.add(cowboy3);
-                mainPanel.add(cowboy4);
+                Cowboy cowboy41 = new Cowboy(0,0);
+                Cowboy cowboy42 = new Cowboy(250,0);
+                Cowboy cowboy43 = new Cowboy(frameWidth-90,0);
+                Cowboy cowboy44 = new Cowboy(250,350);
+                mainPanel.add(cowboy41);
+                mainPanel.add(cowboy42);
+                mainPanel.add(cowboy43);
+                mainPanel.add(cowboy44);
                 break;
+
+            case 5:
+                Cowboy cowboy51 = new Cowboy(250,350);
+                Cowboy cowboy52 = new Cowboy(0,0);
+                Cowboy cowboy53 = new Cowboy(125,0);
+                Cowboy cowboy54 = new Cowboy(375,0);
+                Cowboy cowboy55 = new Cowboy(frameWidth-90,0);
+                mainPanel.add(cowboy51);
+                mainPanel.add(cowboy52);
+                mainPanel.add(cowboy53);
+                mainPanel.add(cowboy54);
+                mainPanel.add(cowboy55);
+                break;
+            case 6:
+                Cowboy cowboy61 = new Cowboy(250,350);
+                Cowboy cowboy62 = new Cowboy(0,0);
+                Cowboy cowboy63 = new Cowboy(125,0);
+                Cowboy cowboy64 = new Cowboy(250,0);
+                Cowboy cowboy65 = new Cowboy(375,0);
+                Cowboy cowboy66 = new Cowboy(frameWidth-90,0);
+                mainPanel.add(cowboy61);
+                mainPanel.add(cowboy62);
+                mainPanel.add(cowboy63);
+                mainPanel.add(cowboy64);
+                mainPanel.add(cowboy65);
+                mainPanel.add(cowboy66);
+                break;
+            case 7:
+                Cowboy cowboy71 = new Cowboy(250,350);
+                Cowboy cowboy72 = new Cowboy(0,200);
+                Cowboy cowboy73 = new Cowboy(0,0);
+                Cowboy cowboy74 = new Cowboy(125,0);
+                Cowboy cowboy75 = new Cowboy(375,0);
+                Cowboy cowboy76 = new Cowboy(frameWidth-90,0);
+                Cowboy cowboy77 = new Cowboy(frameWidth-90,200);
+                mainPanel.add(cowboy71);
+                mainPanel.add(cowboy72);
+                mainPanel.add(cowboy73);
+                mainPanel.add(cowboy74);
+                mainPanel.add(cowboy75);
+                mainPanel.add(cowboy76);
+                mainPanel.add(cowboy77);
+                break;
+            case 8:
+                Cowboy cowboy81 = new Cowboy(250,350);
+                Cowboy cowboy82 = new Cowboy(0,200);
+                Cowboy cowboy83 = new Cowboy(0,0);
+                Cowboy cowboy84 = new Cowboy(125,0);
+                Cowboy cowboy85 = new Cowboy(250,0);
+                Cowboy cowboy86 = new Cowboy(375,0);
+                Cowboy cowboy87 = new Cowboy(frameWidth-90,0);
+                Cowboy cowboy88 = new Cowboy(frameWidth-90,200);
+                mainPanel.add(cowboy81);
+                mainPanel.add(cowboy82);
+                mainPanel.add(cowboy83);
+                mainPanel.add(cowboy84);
+                mainPanel.add(cowboy85);
+                mainPanel.add(cowboy86);
+                mainPanel.add(cowboy87);
+                mainPanel.add(cowboy88);
+                break;
+
+
 
 
         }
